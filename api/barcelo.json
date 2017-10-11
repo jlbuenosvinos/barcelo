@@ -29,6 +29,29 @@
           },
           "required": true
         }
+      },
+      "post": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasAkiraResponseVO"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasAkiraRequestVO"
+              }
+            }
+          },
+          "required": true
+        }
       }
     },
     "/sap": {
@@ -56,7 +79,8 @@
         }
       }
     },
-    "/booking": {}
+    "/booking": {},
+    "/bookings/": {}
   },
   "components": {
     "schemas": {
