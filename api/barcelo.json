@@ -32,7 +32,29 @@
       }
     },
     "/sap": {
-      "put": {}
+      "put": {
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasSapResponseVO"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasSapRequestVO"
+              }
+            }
+          },
+          "required": true
+        }
+      }
     }
   },
   "components": {
