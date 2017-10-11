@@ -37,6 +37,20 @@
   },
   "components": {
     "schemas": {
+      "AkiraResponseVO": {
+        "properties": {
+          "akiraRegistrationId": {
+            "type": "string"
+          }
+        }
+      },
+      "SapResponseVO": {
+        "properties": {
+          "sapRegistrationId": {
+            "type": "string"
+          }
+        }
+      },
       "AkiraRequestVO": {
         "properties": {
           "adultQuantity": {
@@ -50,12 +64,75 @@
           },
           "charged": {
             "type": "boolean"
+          },
+          "childQuantity": {
+            "type": "integer"
+          },
+          "creationDate": {
+            "type": "date"
+          },
+          "description": {
+            "type": "string"
+          },
+          "emissionDate": {
+            "type": "date"
+          },
+          "emissionLimitDate": {
+            "type": "date"
+          },
+          "groupName": {
+            "type": "string"
+          },
+          "infantQuantity": {
+            "type": "integer"
+          },
+          "lastModificationDate": {
+            "type": "date"
           }
         }
       },
-      "AkiraResponseVO": {
+      "SapRequestVO": {
         "properties": {
+          "adultQuantity": {
+            "type": "integer"
+          },
+          "agent": {
+            "type": "string"
+          },
+          "application": {
+            "type": "string"
+          },
+          "charged": {
+            "type": "boolean"
+          },
+          "childQuantity": {
+            "type": "integer"
+          },
+          "creationDate": {
+            "type": "date"
+          },
+          "description": {
+            "type": "string"
+          },
+          "emissionDate": {
+            "type": "date"
+          },
+          "emissionLimitDate": {
+            "type": "date"
+          },
+          "groupName": {
+            "type": "string"
+          },
+          "infantQuantity": {
+            "type": "integer"
+          },
+          "lastModificationDate": {
+            "type": "date"
+          },
           "akiraRegistrationId": {
+            "type": "string"
+          },
+          "callbackUrl": {
             "type": "string"
           }
         }
