@@ -5,9 +5,27 @@
     "description": "",
     "version": "1.0.0"
   },
+  "paths": {
+    "/akira": {}
+  },
   "components": {
     "schemas": {
-      "AkiraRequestVO": {}
+      "AkiraRequestVO": {
+        "properties": {
+          "adultQuantity": {
+            "type": "integer"
+          },
+          "agent": {
+            "type": "string"
+          },
+          "application": {
+            "type": "string"
+          },
+          "charged": {
+            "type": "boolean"
+          }
+        }
+      }
     }
   }
 }
