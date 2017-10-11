@@ -55,7 +55,8 @@
           "required": true
         }
       }
-    }
+    },
+    "/booking": {}
   },
   "components": {
     "schemas": {
