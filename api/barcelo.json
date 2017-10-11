@@ -7,11 +7,7 @@
   },
   "paths": {
     "/akira": {
-      "put": {
-        "requestBody": {
-          "required": false
-        }
-      },
+      "put": {},
       "post": {
         "responses": {
           "200": {
