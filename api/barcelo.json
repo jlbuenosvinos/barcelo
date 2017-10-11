@@ -6,7 +6,20 @@
     "version": "1.0.0"
   },
   "paths": {
-    "/akira": {}
+    "/akira": {
+      "put": {
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasAkiraRequestVO"
+              }
+            }
+          },
+          "required": true
+        }
+      }
+    }
   },
   "components": {
     "schemas": {
