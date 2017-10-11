@@ -9,6 +9,7 @@
     "/akira": {
       "put": {},
       "post": {
+        "summary": "Akira API ",
         "responses": {
           "200": {
             "content": {
@@ -81,7 +82,23 @@
         }
       }
     },
-    "/booking": {},
+    "/booking": {
+      "post": {
+        "responses": {
+          "200": {}
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasBookingRequestVO"
+              }
+            }
+          },
+          "required": true
+        }
+      }
+    },
     "/bookings/": {}
   },
   "components": {
@@ -183,6 +200,19 @@
           },
           "callbackUrl": {
             "type": "string"
+          }
+        }
+      },
+      "BookingRequestVO": {
+        "properties": {
+          "adultQuantity": {
+            "type": "integer"
+          },
+          "childQuantity": {
+            "type": "integer"
+          },
+          "infantQuantity": {
+            "type": "integer"
           }
         }
       }
