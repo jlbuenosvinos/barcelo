@@ -100,7 +100,23 @@
         }
       }
     },
-    "/bookings/": {}
+    "/bookings/": {
+      "post": {
+        "summary": "Creates a new Booking",
+        "responses": {
+          "200": {}
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasBookingRequestVO"
+              }
+            }
+          }
+        }
+      }
+    }
   },
   "components": {
     "schemas": {
