@@ -84,6 +84,7 @@
     },
     "/booking": {
       "post": {
+        "summary": "Creates a new Booking",
         "responses": {
           "200": {}
         },
