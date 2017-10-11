@@ -9,7 +9,7 @@
     "/akira": {
       "put": {
         "requestBody": {
-          "required": true
+          "required": false
         }
       },
       "post": {
