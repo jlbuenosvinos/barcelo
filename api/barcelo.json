@@ -8,25 +8,7 @@
   "paths": {
     "/akira": {
       "put": {
-        "responses": {
-          "200": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemasAkiraResponseVO"
-                }
-              }
-            }
-          }
-        },
         "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemasAkiraRequestVO"
-              }
-            }
-          },
           "required": true
         }
       },
