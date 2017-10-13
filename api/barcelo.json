@@ -44,29 +44,7 @@
     },
     "/sap": {
       "get": {},
-      "put": {
-        "responses": {
-          "200": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemasSapResponseVO"
-                }
-              }
-            }
-          }
-        },
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemasSapRequestVO"
-              }
-            }
-          },
-          "required": true
-        }
-      },
+      "put": {},
       "post": {
         "responses": {
           "200": {
@@ -84,24 +62,6 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemasSapRequestVO"
-              }
-            }
-          },
-          "required": true
-        }
-      }
-    },
-    "/booking": {
-      "post": {
-        "summary": "Creates a new Booking",
-        "responses": {
-          "200": {}
-        },
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemasBookingRequestVO"
               }
             }
           },
