@@ -193,16 +193,19 @@
             "type": "integer"
           },
           "creationDate": {
-            "type": "date"
+            "format": "date",
+            "type": "string"
           },
           "description": {
             "type": "string"
           },
           "emissionDate": {
-            "type": "date"
+            "format": "date",
+            "type": "string"
           },
           "emissionLimitDate": {
-            "type": "date"
+            "format": "date",
+            "type": "string"
           },
           "groupName": {
             "type": "string"
@@ -211,7 +214,8 @@
             "type": "integer"
           },
           "lastModificationDate": {
-            "type": "date"
+            "format": "date",
+            "type": "string"
           },
           "akiraRegistrationId": {
             "type": "string"
