@@ -146,6 +146,7 @@
             "type": "string"
           },
           "infantQuantity": {
+            "format": "int32",
             "type": "integer"
           },
           "lastModificationDate": {
