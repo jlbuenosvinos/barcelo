@@ -42,8 +42,24 @@
         }
       }
     },
+    "/bookings/": {
+      "post": {
+        "summary": "Creates a new Booking",
+        "responses": {
+          "200": {}
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasBookingRequestVO"
+              }
+            }
+          }
+        }
+      }
+    },
     "/sap": {
-      "get": {},
       "put": {
         "responses": {
           "200": {}
@@ -72,23 +88,6 @@
           "required": true
         }
       }
-    },
-    "/bookings/": {
-      "post": {
-        "summary": "Creates a new Booking",
-        "responses": {
-          "200": {}
-        },
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemasBookingRequestVO"
-              }
-            }
-          }
-        }
-      }
     }
   },
   "components": {
@@ -96,13 +95,6 @@
       "AkiraResponseVO": {
         "properties": {
           "akiraRegistrationId": {
-            "type": "string"
-          }
-        }
-      },
-      "SapResponseVO": {
-        "properties": {
-          "sapRegistrationId": {
             "type": "string"
           }
         }
