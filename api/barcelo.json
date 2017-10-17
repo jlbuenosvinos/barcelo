@@ -139,6 +139,29 @@
           }
         }
       },
+      "BookingRequestVO": {
+        "properties": {
+          "adultQuantity": {
+            "type": "integer"
+          },
+          "childQuantity": {
+            "type": "integer"
+          },
+          "infantQuantity": {
+            "type": "integer"
+          }
+        }
+      },
+      "SapCallbackRequestVO": {
+        "properties": {
+          "akiraRegistrationId": {
+            "type": "string"
+          },
+          "sapRegistrationId": {
+            "type": "string"
+          }
+        }
+      },
       "SapRequestVO": {
         "properties": {
           "adultQuantity": {
@@ -178,32 +201,6 @@
             "type": "date"
           },
           "akiraRegistrationId": {
-            "type": "string"
-          },
-          "callbackUrl": {
-            "type": "string"
-          }
-        }
-      },
-      "BookingRequestVO": {
-        "properties": {
-          "adultQuantity": {
-            "type": "integer"
-          },
-          "childQuantity": {
-            "type": "integer"
-          },
-          "infantQuantity": {
-            "type": "integer"
-          }
-        }
-      },
-      "SapCallbackRequestVO": {
-        "properties": {
-          "akiraRegistrationId": {
-            "type": "string"
-          },
-          "sapRegistrationId": {
             "type": "string"
           }
         }
