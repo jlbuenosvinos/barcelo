@@ -63,6 +63,11 @@
       "put": {
         "responses": {
           "200": {}
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {}
+          }
         }
       },
       "post": {
