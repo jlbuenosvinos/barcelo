@@ -15,33 +15,6 @@
     "version": "1.0.0"
   },
   "paths": {
-    "/akira": {
-      "put": {},
-      "post": {
-        "summary": "Akira API ",
-        "responses": {
-          "200": {
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemasAkiraResponseVO"
-                }
-              }
-            }
-          }
-        },
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemasAkiraRequestVO"
-              }
-            }
-          },
-          "required": true
-        }
-      }
-    },
     "/bookings/": {
       "post": {
         "summary": "Creates a new Booking",
@@ -92,6 +65,32 @@
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemasSapRequestVO"
+              }
+            }
+          },
+          "required": true
+        }
+      }
+    },
+    "/akira": {
+      "post": {
+        "summary": "Akira API ",
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemasAkiraResponseVO"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasAkiraRequestVO"
               }
             }
           },
