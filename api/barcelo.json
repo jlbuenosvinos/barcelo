@@ -69,7 +69,7 @@
               }
             }
           },
-          "required": false
+          "required": true
         }
       }
     },
