@@ -44,7 +44,11 @@
     },
     "/sap": {
       "get": {},
-      "put": {},
+      "put": {
+        "responses": {
+          "200": {}
+        }
+      },
       "post": {
         "responses": {
           "200": {
@@ -199,6 +203,16 @@
           },
           "infantQuantity": {
             "type": "integer"
+          }
+        }
+      },
+      "SapCallbackRequestVO": {
+        "properties": {
+          "akiraRegistrationId": {
+            "type": "string"
+          },
+          "sapRegistrationId": {
+            "type": "string"
           }
         }
       }
