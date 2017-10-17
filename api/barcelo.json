@@ -111,6 +111,7 @@
       "AkiraRequestVO": {
         "properties": {
           "adultQuantity": {
+            "format": "int32",
             "type": "integer"
           },
           "agent": {
@@ -123,6 +124,7 @@
             "type": "boolean"
           },
           "childQuantity": {
+            "format": "int32",
             "type": "integer"
           },
           "creationDate": {
