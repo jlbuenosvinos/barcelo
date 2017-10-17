@@ -66,8 +66,13 @@
         },
         "requestBody": {
           "content": {
-            "application/json": {}
-          }
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemasSapCallbackRequestVO"
+              }
+            }
+          },
+          "required": true
         }
       },
       "post": {
