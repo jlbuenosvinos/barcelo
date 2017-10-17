@@ -158,12 +158,15 @@
       "BookingRequestVO": {
         "properties": {
           "adultQuantity": {
+            "format": "int32",
             "type": "integer"
           },
           "childQuantity": {
+            "format": "int32",
             "type": "integer"
           },
           "infantQuantity": {
+            "format": "int32",
             "type": "integer"
           }
         }
