@@ -28,7 +28,8 @@
                 "$ref": "#/components/schemasBookingRequestVO"
               }
             }
-          }
+          },
+          "required": true
         }
       }
     },
