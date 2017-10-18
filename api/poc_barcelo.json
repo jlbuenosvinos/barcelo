@@ -77,6 +77,25 @@
           "type": "string"
         }
       }
+    },
+    "BookingRequestVO": {
+      "properties": {
+        "adultQuantity": {
+          "format": "int32",
+          "description": "adultQuantity",
+          "type": "integer"
+        },
+        "childQuantity": {
+          "format": "int32",
+          "description": "childQuantity",
+          "type": "integer"
+        },
+        "infantQuantity": {
+          "format": "int32",
+          "description": "infantQuantity",
+          "type": "integer"
+        }
+      }
     }
   }
 }
