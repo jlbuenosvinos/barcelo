@@ -20,7 +20,9 @@
           }
         ],
         "responses": {
-          "200": {}
+          "200": {
+            "description": "SAP registration has been notified."
+          }
         }
       },
       "post": {
