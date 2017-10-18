@@ -6,7 +6,42 @@
     "version": "1.0.0"
   },
   "paths": {
-    "/sap": {},
+    "/sap": {
+      "put": {
+        "summary": "SAP notifies an AKIRA booking has been registered.",
+        "description": "SAP notifies an AKIRA booking has been registered.",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/SapCallbackRequestVO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {}
+        }
+      },
+      "post": {
+        "summary": "Register an AKIRA booking into SAP.",
+        "description": "Register a AKIRA booking into SAP.",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/SapRequestVO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The registration request has been accepted."
+          }
+        }
+      }
+    },
     "/akira": {
       "post": {
         "description": "Register a new Booking into AKIRA",
@@ -29,7 +64,26 @@
         }
       }
     },
-    "/bookings": {}
+    "/bookings": {
+      "post": {
+        "summary": "Creates a new Booking",
+        "description": "Creates a new Booking",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/BookingRequestVO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The new booking has been created."
+          }
+        }
+      }
+    }
   },
   "definitions": {
     "AkiraRequestVO": {
