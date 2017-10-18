@@ -21,6 +21,7 @@
         ],
         "responses": {
           "200": {
+            "description": "The new booking has been registered into AKIRA",
             "schema": {
               "$ref": "#/definitions/AkiraResponseVO"
             }
