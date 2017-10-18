@@ -7,7 +7,27 @@
   },
   "paths": {
     "/sap": {},
-    "/akira": {},
+    "/akira": {
+      "post": {
+        "description": "Register a new Booking into AKIRA",
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "schema": {
+              "$ref": "#/definitions/AkiraRequestVO"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/AkiraResponseVO"
+            }
+          }
+        }
+      }
+    },
     "/bookings": {}
   },
   "definitions": {
