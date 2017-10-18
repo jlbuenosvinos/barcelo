@@ -1,1 +1,82 @@
-{"info":{"title":"PoC_Barcelo","description":"","version":"1.0.0"},"swagger":"2.0"}
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "PoC_Barcelo",
+    "description": "",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/sap": {},
+    "/akira": {},
+    "/bookings": {}
+  },
+  "definitions": {
+    "AkiraRequestVO": {
+      "properties": {
+        "adultQuantity": {
+          "format": "int32",
+          "description": "adultQuantity",
+          "type": "integer"
+        },
+        "agent": {
+          "description": "agent",
+          "type": "string"
+        },
+        "application": {
+          "description": "application",
+          "type": "string"
+        },
+        "charged": {
+          "description": "charged",
+          "type": "boolean"
+        },
+        "childQuantity": {
+          "format": "int32",
+          "description": "childQuantity",
+          "type": "integer"
+        },
+        "creationDate": {
+          "format": "date",
+          "description": "creationDate",
+          "type": "string"
+        },
+        "description": {
+          "description": "description",
+          "type": "string"
+        },
+        "emissionDate": {
+          "format": "date",
+          "description": "emissionDate",
+          "type": "string"
+        },
+        "emissionLimitDate": {
+          "format": "date",
+          "description": "emissionLimitDate",
+          "type": "string"
+        },
+        "groupName": {
+          "description": "groupName",
+          "type": "string"
+        },
+        "infantQuantity": {
+          "format": "int32",
+          "description": "infantQuantiy",
+          "type": "integer"
+        },
+        "lastModificationDate": {
+          "format": "date",
+          "description": "lastModificationDate",
+          "type": "string"
+        }
+      }
+    },
+    "AkiraResponseVO": {
+      "properties": {
+        "akiraRegistrationId": {
+          "description": "AKIRA booking registration identifier",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
